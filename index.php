@@ -1,17 +1,35 @@
 <?php
-  $name =  "Arrafa";
-  $umur =  "16 Tahun";
-?>
+     //  simpan file variable ini dengan contoh variable.php
 
-<!DOCTYPE html >
-<html>
-<head>
-    <title>Belajar Php<title>
-</head>
-<body>
-    <h1>Halo, <?php echo $name; ?></h1>
-    <h2>halo, <?php echo $umur; ?></h2>
-</body>
-        </html>
-    <Data><a href="mailto:arrafaaddress@gmail.com"></a></Data>
-    </head>
+     /** Menyimpan nama arrafa dalam varible $nama
+      * karana type datanya adalah staring (teks)
+    * maka penulisanya denagn tanda kutip"  
+    
+     **/  
+     
+   $name = "Arrafa,";
+   echo $name;
+   echo "<br>"; // Buat baris baru 
+
+    // simpan umur arrafa dalam variable $umur 
+
+   $umur = "16,";
+   echo $umur;
+   echo "<br>"; // Buat dalam variable umur 
+
+   // simpan tanggal lahir arrafa dalam variable
+   
+   $tanggalahir = strtotime("19 November 2010");
+   echo date("j M Y", $tanggalahir);
+   echo "<br>"; // Buat baris baru
+
+   // simpan jawaban benar (true) atau salah (false)
+   $Mentalpejuang = true;
+   echo"MentalPejuang,";
+   $mentalpemberani = false;
+   echo"mentalpemberani";
+   
+
+   
+  
+?>
